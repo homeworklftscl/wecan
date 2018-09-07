@@ -1,0 +1,198 @@
+.hero
+    background-image: url('../img/bg/bg1.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+
+.mobile__btn
+    width: 30px
+    height: 30px
+    background-color: #fff
+    @include desktop
+        display: none
+    @include phones
+        display: block
+        position: absolute
+        top: 13px
+        right: 20px
+
+.header
+    width: 100%
+    color: white
+    &__bottom
+        @include phones
+            display: none
+    &__list
+        width: 70%
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        align-items: center
+        @include laptop
+            width: 100%
+        @include phones
+            flex-direction: column
+
+    &__item
+        width: 33%
+        display: flex
+        align-items: center
+        flex-direction: column
+        @include phones
+            width: 100%
+            &:nth-child(1)
+                order: 1
+    &__top
+        position: relative
+        font-family: 'mullerl'
+        font-size: 22px
+        font-weight: 400
+        line-height: 26.01px
+        margin-bottom: 45px
+        padding-top: 40px
+        @include laptop
+            padding-top: 60px
+    &__logo
+        width: 263px
+        height: 169px
+        @include tablets
+            max-width: 100%
+            height: auto
+        @include phones
+            margin: 0 -30px 30px 0
+    &__phone
+        text-decoration: none
+        color: white
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0
+        @include phones
+            margin-bottom: 0
+            &:last-child
+                margin-bottom: 30px
+
+    &__desc
+        display: block
+        margin-bottom: 30px
+        @include phones
+            margin-bottom: 10px
+    &__dinner
+        cursor: pointer
+        position: absolute
+        right: 0
+        bottom: 25%
+        border-bottom: 1px dashed
+        @include laptop
+            right: 15px
+            bottom: 75%
+        @include phones
+            right: 15px
+            bottom: 90%
+    &__wtime
+        text-indent: -45px
+        @include phones
+            text-indent: 0
+    &__nav-list
+        display: flex
+        justify-content: center
+        align-items: center
+    &__nav-item
+        display: flex
+        justify-content: center
+        align-items: center
+        align-self: flex-end
+        &:after
+            align-self: flex-end
+            content: ""
+            width: 5px
+            height: 5px
+            border-radius: 50%
+            background-color: #fff
+            margin: 0 35px 9px 35px
+            @include tablets
+                margin: 0 18px 9px 18px
+        &:last-child:after
+            display: none
+    &__nav-title
+        font-family: 'mullerl'
+        font-size: 23px
+        font-weight: 400
+    &__nav-wrap
+        text-decoration: none
+        color: white
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__nav-icon
+        margin-bottom: 15px
+    &__nav-icon-menu
+        width: 49px
+        height: 47px
+    &__nav-icon-servises
+        margin-right: -17px
+        width: 45px
+        height: 47px
+    &__nav-icon-photo
+        width: 47px
+        height: 39px
+    &__nav-icon-sales
+        width: 35px
+        height: 39px
+    &__nav-icon-card
+        width: 47px
+        height: 47px
+
+        //SCROLL MOUSE
+@keyframes ani-mouse
+  0%
+    opacity: 1
+    top: 15%
+
+  15%
+    opacity: 1
+    top: 70%
+
+  50%
+    opacity: 0
+    top: 70%
+
+  100%
+    opacity: 0
+    top: 29%
+
+
+.scroll-btn
+  display: block
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 25px
+  text-align: center
+  > *
+    &:hover, &:focus, &.active
+      color: #ffffff
+    &:hover, &:focus, &:active, &.active
+      opacity: 0.8
+      filter: alpha(opacity = 80)
+  .mouse
+    position: relative
+    display: block
+    width: 35px
+    height: 55px
+    margin: 0 auto 20px
+    box-sizing: border-box
+    border: 2px solid white
+    border-radius: 23px
+    > *
+      position: absolute
+      display: block
+      top: 29%
+      left: 50%
+      width: 3px
+      height: 10px
+      margin: -1.5px 0 0 -1.5px
+      background: white
+      border-radius: 5px
+      animation: ani-mouse 3.5s linear infinite
+

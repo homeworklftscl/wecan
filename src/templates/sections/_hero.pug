@@ -1,0 +1,42 @@
+section.hero
+    .container
+        .header
+            .header__top
+                ul.header__list
+                    li.header__item
+                        span.header__desc Доставим обеды
+                        span.header__wtime 10:00-16:00
+                    li.header__item
+                        img(src="./img/content/logo.png").header__logo
+                    li.header__item
+                        a.header__phone(href="tel: +375000000000") +375 00 000-00-00    
+                        a.header__phone(href="tel: +375000000000") +375 00 000-00-00 
+                span.header__dinner Мой обед
+            .header__bottom            
+                nav.header__nav
+                    ul.header__nav-list
+                        li.header__nav-item
+                            a(href="").header__nav-wrap
+                                +icon("menu", "header__nav-icon header__nav-icon-menu")
+                                span.header__nav-title Меню
+                        li.header__nav-item
+                            a(href="").header__nav-wrap
+                                +icon("servises", "header__nav-icon header__nav-icon-servises")
+                                span.header__nav-title Услуги
+                        li.header__nav-item
+                            a(href="").header__nav-wrap
+                                +icon("photo", "header__nav-icon header__nav-icon-photo")
+                                span.header__nav-title Фотоотчеты
+                        li.header__nav-item
+                            a(href="").header__nav-wrap
+                                +icon("sales", "header__nav-icon header__nav-icon-sales")
+                                span.header__nav-title Акции и новости
+                        li.header__nav-item
+                            a(href="").header__nav-wrap
+                                +icon("card", "header__nav-icon header__nav-icon-card")
+                                span.header__nav-title Визитка
+            //- .mobile__btn
+        span.scroll-btn
+            a(href="#order")
+                span.mouse
+                    span

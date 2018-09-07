@@ -1,0 +1,173 @@
+.sales
+.footer
+    height: 34%
+    position: relative
+    overflow: hidden
+    &__figure
+        position: absolute
+        bottom: -5px
+        right: 220px
+        @include desktop
+            right: 0
+        @include laptop
+            right: -30%
+        @include tablets
+            right: -70%
+        @include phones
+            right: -140%
+        @include m-phones
+            right: -160%
+    &__wrap
+        padding: 40px 0
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: flex-start
+        z-index: 999
+        @include tablets
+            padding: 25px 0
+        @include phones
+            padding: 15px 0
+    &__block
+        display: flex
+        @include tablets
+            flex-direction: column
+    &__title
+        font-family: 'mullerb'
+        font-size: 20px
+        font-weight: bold
+        margin-bottom: 30px
+        @include tablets
+            margin-bottom: 10px
+        @include m-phones
+            font-size: 15px
+            margin-bottom: 7px
+    &__logo
+        margin-right: 175px
+        @include laptop
+            margin-right: 85px
+        @include tablets
+            margin-right: 115px
+        @include phones
+            display: none
+    &__contacts
+        display: flex
+        flex-direction: column
+        margin-right: 130px
+        @include tablets
+            margin-right: 0
+    &__phone, .footer__mail
+        color: white
+        text-decoration: none 
+        font-family: 'mullerl'
+        font-size: 20px
+        @include s-phones
+            font-size: 15px
+    &__list
+        display: flex
+        flex-direction: column
+    &__item
+        &:nth-child(2)
+            margin-bottom: 30px
+            @include tablets
+                margin-bottom: 10px
+        &:nth-child(3)
+            @include tablets
+                margin-bottom: 15px
+            @include s-phones
+                margin-bottom: 10px
+    &__creator
+        align-self: flex-end
+        font-size: 16px
+        position: absolute
+        right: 15%
+        @include laptop
+            right: 2%
+            bottom: 5%
+        @include tablets
+            right: 3%
+        @include phones
+            bottom: 3%
+        @include m-phones
+            font-size: 12px
+        @include s-phones
+            font-size: 10px
+            right: 2%
+            bottom: 1%
+    &__auth
+        font-family: 'mullerl'
+    &__name
+        font-family: 'mullerb'
+        text-decoration: none
+        color: black
+    &__soc-list
+        display: flex
+        margin-top: 10px
+    &__soc-item
+        margin-right: 10px
+    &__soc-icon
+        width: 30px
+        height: 30px
+    &__soc-icon path
+        fill: white
+
+.slick
+    &__slider
+        height: 66%
+    &__slider div
+        height: 100%
+    &__slid
+        position: relative
+    &__text
+        font-family: 'certaS'
+        font-size: 62px
+        color: white
+        font-weight: 500
+        line-height: 0
+        position: absolute
+        top: 50%
+        right: 50%
+        transform: translateX(50%)
+        @include phones
+            font-size: 40px
+    &__slid1
+        background-image: url(../img/content/sale.jpg)
+        background-position: 50%
+        background-size: cover
+    &__slid2
+        background-image: url(../img/content/sale.jpg)
+        background-position: 50%
+        background-size: cover
+    &__slid3
+        background-image: url(../img/content/sale.jpg)
+        background-position: 50%
+        background-size: cover
+
+.prev, .next
+    display: block
+    position: absolute
+    width: 18px
+    height: 34px
+    background-color: transparent
+    top: 50%
+    z-index: 999
+    transform: translateY(-50%)
+    background-position: 50%
+    background-size: cover
+    background-repeat: no-repeat
+.next
+    right: 100px
+    background-image: url(../img/content/arrow.png)
+    @include tablets
+        right: 50px
+    @include phones
+        right: 10px
+.prev
+    left: 100px
+    background-image: url(../img/content/arrow-prev.png)
+    @include tablets
+        left: 50px
+    @include phones
+        left: 10px
+
+

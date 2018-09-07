@@ -1,0 +1,113 @@
+.order, .footer
+    background-image: url('../img/bg/bg2.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+.order
+    &__wrap
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__list
+        width: 100%
+        display: flex
+        justify-content: space-between
+        @include phones
+            flex-direction: column
+    &__item
+        position: relative
+        @include laptop
+            margin-right: 20px
+            &:last-child
+                margin-right: 0
+        @include tablets
+            margin-right: 15px
+        @include phones
+            margin-right: 0
+    &__billet
+        position: relative
+    &__img, .order__big-img
+        max-width: 100%
+        @include phones
+            width: 45%
+    &__title
+        font-family: 'ut_laurellebold'
+        font-size: 50px
+        font-weight: 700
+        margin-bottom: 60px
+        color: black
+        @include phones
+            margin-bottom: 10px
+            font-size: 25px
+        @include s-phones
+            font-size: 20px
+    &__subtitle
+        position: absolute
+        top: 10%
+        left: 35%
+        font-family: 'certaS'
+        color:  #ffffff
+        font-size: 28px
+        font-weight: 500
+        text-transform: uppercase
+        @include laptop
+            top: 7%
+            left: 32%
+        @include tablets
+            font-size: 21px
+        @include phones
+            top: 1%
+            left: 11%
+        @include m-phones
+            font-size: 16px
+            top: 6%
+            left: 45px
+        @include s-phones
+            top: 3%
+            left: 36px
+    &__subtitle-mid
+        left: 38%
+        @include laptop
+            left: 35%
+        @include phones
+            left: 51px
+        @include m-phones
+            left: 51px
+        @include s-phones
+            left: 40px
+    &__subtitle-right
+        left: 30%
+        @include laptop
+            left: 26%
+        @include phones
+            left: 8%
+        @include m-phones
+            left: 35px
+        @include s-phones
+            left: 24px
+    &__big-img
+        margin: -35px 0 20px 0
+        @include phones
+            margin: -36px 0 20px 0
+    &__btn
+        display: block
+        width: 100%
+        background-color: #ffb300
+        font-family: 'certaS'
+        color:  #ffffff
+        font-size: 28px
+        font-weight: 500
+        text-align: center
+        border-radius: 40px
+        text-decoration: none
+        padding: 12px 0
+        transition: .5s
+        &:hover
+            background-color: #FFCF40
+        @include phones
+            position: absolute
+            font-size: 25px
+            max-width: 40%
+            top: 69px
+            right: 15px
