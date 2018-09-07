@@ -29,4 +29,5 @@ nbproject
 .tmp
 _tmp
 node_modules
-bower_components
+bower_component
+.vscode
